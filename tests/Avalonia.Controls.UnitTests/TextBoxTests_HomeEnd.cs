@@ -19,11 +19,11 @@ namespace Avalonia.Controls.UnitTests;
 
 // HomeEndBehavior is process-wide state. Keep all policy overrides in a
 // non-parallel xUnit collection, and restore the value after every test.
-[CollectionDefinition("TextBox HomeEnd regressions", DisableParallelization = true)]
-public class TextBoxHomeEndRegressionCollection { }
+[CollectionDefinition("TextBox Home/End handling", DisableParallelization = true)]
+public class TextBoxTests_HomeEndCollection { }
 
-[Collection("TextBox HomeEnd regressions")]
-public class TextBoxHomeEndRegressionTests : ScopedTestBase
+[Collection("TextBox Home/End handling")]
+public class TextBoxTests_HomeEnd : ScopedTestBase
 {
     private const string FourLines = "aaaa\nbbbb\ncccc\ndddd";
 
